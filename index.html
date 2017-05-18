@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <meta charset="utf-8">
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,6 +14,19 @@
             <link href="css/style.css" rel="stylesheet" type="text/css"/>
       <title>Credipy - El primer No-Bank del Ecuador</title>
       <meta name="description" content="Envía y recibe dinero instantáneamente. Paga, cobra y solicita préstamos.">
+
+
+
+      <meta property="og:image" content="home3/cred-ws.png" />
+
+      <meta property="og:site_name" content="Credipy">
+      <meta property="og:title" content="Credipy - El primer No-Bank del Ecuador" />
+      <meta property="og:description" content="Envía y recibe dinero instantáneamente. Paga, cobra y solicita préstamos." />
+      <meta property="og:image" itemprop="image" content="home3/cred-ws.png">
+      <meta property="og:type" content="website" />
+      <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+
   </head>
 <body class="desktop-style">
 
@@ -23,19 +36,21 @@
      <header class="header-style-1 type-2">
        <div class="header">
           <a href="index.html" class="logo vertical-align auto">
-             <img src="img/logo.png" alt="" class="logo-default">
-             <img src="img/logo_scroll.png" alt="" class="logo-scroll">
+             <img src="img/logo.png" alt="" class="logo-default" style="width: 230px;">
+             <img src="img/logo_scroll.png" alt="" class="logo-scroll" style="width: 230px;">
           </a>
           <a href="#" class="burger-menu vertical-align right"><i></i></a>
 		   <nav class="nav-menu vertical-align auto">
 		     <ul>
-		     	<li><a href="#home">Inicio</a></li>
-		     	<li><a href="#about" >Préstamos</a></li>
-		     	<li><a href="#services" >Servicios</a></li>
+		     	<!-- <li><a href="#home">Inicio</a></li> -->
+		     	<li><a href="#about" >Personas</a></li>
+		     	<li><a href="comercios.html" >Comercios</a></li>
+          <li><a href="https://medium.com/@Credipy" >Blog</a></li>
+          <li><a href="videos.html" >Tutoriales</a></li>
 		     	<!-- <li><a href="#pricing">APP</a></li> -->
 		     	<!-- <li><a href="#contact" >Contacto</a></li> -->
           <!-- <li><a href="#" class="">Iniciar sesión</a></li> -->
-          <li class="dwn-btn"><a href="#">Download Now</a></li>
+          <li class="dwn-btn"><a href="https://play.google.com/store/apps/details?id=ol.loc.myapplication_otroimenulateral&hl=es" target="_blank" >Descargar ahora</a></li>
 		     </ul>
 		   </nav>
        </div>
@@ -49,37 +64,38 @@
 			 <div class="blackblue-layer"></div>
 			  <div class="slider-caption vertical-align white-color middle-align-caption">
 				 <div class="container">
-					<!-- <h1 class="h1 caption-stye-1 type-4">El primer No-Bank del Ecuador</h1> -->
-
-            <!-- <div class="container">
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="col-md-6">
-                      <img src="home3/iphone-recto.png" alt="">
-                    </div>
-                    <div class="col-md-6">
-                      <h3>El primer no bank<span class="cover"></span></h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
             <div class="row content-inicio">
               <div class="col-md-12">
                 <div class="col-md-6">
                   <img src="home3/iphone-recto.png" class="iphone-inicio" alt="">
                 </div>
-                <div class="col-md-6" style="margin-top: 200px;">
-                  <h2 class="h2 caption-stye-1 type-4 dark">¿Qué es Credipy?</h2>
-                  <p>Simple, somos tu NO-BANK, es decir no somos un banco, ni tenemos sus reglas, requisitos y procesos que encarecen sus servicios y hacen difícil el manejo de tu dinero de forma ágil y sencilla.<br><br><br><br><br></p>
 
-                  <a href="#" class="google-btn"></i><span>Disponible en </span> Google Play</a>
+                <div class="col-md-6" style="margin-top: 100px;">
+                  <h2 class="h2 caption-stye-1 type-4 dark" style="font-weight: 100;">Simple, tu No - Bank</h2>
+                  <h2 class="h2 caption-stye-1 type-4 dark" id="changeText">Transfiere dinero a tus amigos</h2>
+                  <p id="changeText2">Simple, somos tu NO-BANK, es decir no somos un banco, ni tenemos sus reglas, requisitos y procesos que encarecen sus servicios y hacen difícil el manejo de tu dinero de forma ágil y sencilla.<br><br><br><br><br></p>
+
+                  <!-- <a href="#" class="google-btn"></i><span>Disponible en </span> Google Play</a> -->
+
+                  <!-- <div id="changeText" ></div> -->
+                     <script type="text/javascript">
+                     var text = ["Transfiere dinero a tus amigos", "Paga servicios básicos", "Paga tus compras", "Recibe remesas"];
+                     var counter = 0;
+                     var elem = document.getElementById("changeText");
+                     setInterval(change, 2000);
+                     function change() {
+                      elem.innerHTML = text[counter];
+                         counter++;
+                         if(counter >= text.length) { counter = 0; }
+                     }
+                     </script>
 
 
 
-                  <!-- <img src="home3/ios-dw.png" class="logos-tiendas" alt=""><br>
-                  <img src="home3/android-dw.png" class="logos-tiendas" alt=""> -->
+
+
+                  <!-- <img src="home3/ios-dw.png" class="logos-tiendas" alt=""><br> -->
+                  <a href="https://play.google.com/store/apps/details?id=ol.loc.myapplication_otroimenulateral&hl=es" target="_blank" ><img src="home3/android-dw.png" class="logos-tiendas" alt=""></a>
                 </div>
               </div>
             </div>
@@ -209,16 +225,15 @@
 		  	     </div>
 		  	  </div>
 		  	  <div class="list-wrap">
-				  <div class="col-wh-50">
+				  <div class="col-wh-60">
 					<ul class="list-style-3">
-						<!-- <li><img src="home3/list_icon_1.png" alt=""><span>aaaaaaaaaaaaaaaa</span></li>
-						<li><img src="home3/list_icon_2.png" alt=""><span>aaaaaaaaaaaaaaaa</span></li>
-						<li><img src="home3/list_icon_3.png" alt=""><span>aaaaaaaaaaaaaaaa</span></li>
-						<li><img src="home3/list_icon_4.png" alt=""><span>aaaaaaaaaaaaaaaa</span></li> -->
-            <li><img src="home3/list_icon_3.png" alt=""><span>Facilitamos el manejo de tu dinero en la vida diaria.</span></li>
+
+            <li><img src="home3/list_icon_2.png" alt=""><span>Facilitamos la transferencia de dinero entre persona.</span></li>
             <li><img src="home3/list_icon_5.png" alt=""><span>Te enseñamos paso a paso como sacar provecho a un banco digital.</span></li>
             <li><img src="home3/list_icon_6.png" alt=""><span>Llegamos a donde los bancos no lo llegan, para acercar sus servicios a más personas.</span></li>
             <li><img src="home3/list_icon_7.png" alt=""><span>Somos 100% cero papeles.</span></li>
+            <li><img src="home3/list_icon_3.png" alt=""><span>Facilitamos el manejo de tu dinero en la vida diaria.</span></li>
+            <li><img src="home3/list_check.png" alt=""><span>En función al uso diaria de tu aplicación, accede a préstamos inmediatos.</span></li>
 
 					</ul>
 				  </div>
@@ -256,7 +271,7 @@
 				   </div>
 				   <div class="link-wrap">
               <a style="cursor: default;" class="link-style-1 type-3"><i class="icon-apple"></i><span>app Store (disponible pronto)</span></a>
-						 <a href="#" class="link-style-1 type-3"><i class="icon-android"></i><span>play store ¡ya disponible!</span></a>
+						 <a href="https://play.google.com/store/apps/details?id=ol.loc.myapplication_otroimenulateral&hl=es" target="_blank" class="link-style-1 type-3"><i class="icon-android"></i><span>play store ¡ya disponible!</span></a>
 						 <!-- <a href="#" class="link-style-1 type-3"><i class="icon-windows"></i><span>windows store</span></a> -->
 				   </div>
             	</div>
@@ -268,11 +283,11 @@
           <div class="container">
 			  <div class="section-caption">
 				  <h2 class="h2 caption-stye-1 type-4 dark">Servicios que realmente funcionan día a día</h2>
-					<div class="simple-text sm">
+					<!-- <div class="simple-text sm">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
+					</div> -->
 			  </div>
-			  <div class="row">
+			  <div class="row pa-arriba60">
 			    <div class="col-md-4">
 					<div class="service-item type-3">
 						<div class="image"><img src="home3/foco.png" alt=""></div>
@@ -341,32 +356,21 @@
        <section class="section">
            <div class="container-big">
 			  <div class="section-caption">
-				 <h2 class="h2 caption-stye-1 type-4 dark">Millones de personas podrán mañana confiar en ti</h2>
-				    <div class="simple-text sm">
-						<p>Curabitur augue elit, egestas vitae erat sed, in the maximus very sollicitudin nisi. In a diam vehicula sed sollicitudin</p>
-					</div>
+				 <h2 class="h2 caption-stye-1 type-4 dark">Transfiere dinero con tus familiares y amigos</h2>
 			  </div>
-			  <div class="tabs">
+			  <div class="tabs pa-arriba60">
 				  <div class="tabs-content">
 					<div class="tab-item tab-item-link-1 active">
 						  <div class="align-block hg-md col-wh">
 						  	<div class="left-coll">
 						  		<div class="cell-view">
 								  <div class="caption-stye-3">
-								   <h3 class="h3 title">Me sirvio con mi negocio</h3>
-									 <div class="simple-text">
-										<p>Cras vitae varius velit. In congue tellus sit amet lorem sagittis sodales. Maecenas dignissim mattis lacus</p>
-									 </div>
+                    <h3 class="h3 title">¡Genial!</h3>
+ 									 <div class="simple-text">
+                    <p style="font-size: 17px;">Credipy, me ayudó a reparar mi herramienta de trabajo, ayudo a mi familia cuando más lo necesitaba y me enseña a cuidar y manejar mi dinero, gracias por su apoyo.</p>
+
+                   </div>
 								  </div>
-								  <!-- <div class="list-wrap">
-									 <ul class="list-style-1 type-3">
-										<li>Famet lorem sagittis sodales</li>
-										<li>Nullam lobortis ac tellus at vehicula</li>
-										<li>Famet lorem sagittis sodales</li>
-										<li>Vivamus id nulla ac mauris</li>
-									 </ul>
-								  </div> -->
-								  <!-- <a href="#" class="link-style-1 type-3"><span>learn more</span></a> -->
 								</div>
 						  	</div>
 						  	<div class="vertical-align right-align">
@@ -383,9 +387,9 @@
 						  	<div class="left-coll">
 						  		<div class="cell-view">
 								  <div class="caption-stye-3">
-								   <h3 class="h3 title">Ahora vendo mas</h3>
+								   <h3 class="h3 title">¡Único!</h3>
 									 <div class="simple-text">
-										<p>Cras vitae varius velit. In congue tellus sit amet lorem sagittis sodales. Maecenas dignissim mattis lacus</p>
+                     <p style="font-size: 17px;">Con Credipy sorprendo a mis clientes cuando les cobro, es  muy fácil y rápido pero lo mejor es que mi dinero se encuentra seguro en mi cuenta permitiendome atender hasta más tarde.</p>
 									 </div>
 								  </div>
 								  <!-- <a href="#" class="link-style-1 type-3"><span>learn more</span></a> -->
@@ -405,9 +409,9 @@
 						  	<div class="left-coll">
 						  		<div class="cell-view">
 								  <div class="caption-stye-3">
-								   <h3 class="h3 title">Lo mejor para negocios</h3>
+								   <h3 class="h3 title">¡Innovador!</h3>
 									 <div class="simple-text">
-										<p>Cras vitae varius velit. In congue tellus sit amet lorem sagittis sodales. Maecenas dignissim mattis lacus</p>
+										<p style="font-size: 17px;">Disminuimos las colas y la espera de nuestros clientes cobrando mucho más rápido.</p>
 									 </div>
 								  </div>
 								  <!-- <a href="#" class="link-style-1 type-3"><span>learn more</span></a> -->
@@ -426,9 +430,9 @@
 				  <div class="tabs-link">
 				    <div class="drop-filter"><span>Aliquam gravida </span><i class="icon-down-open-big arrow-down"></i></div>
 				    <ul class="filter-mob-list">
-						<li class="tabs-button active" data-link="link-1">Luis Villacis</li>
-						<li class="tabs-button" data-link="link-2">Paul Reina</li>
-						<li class="tabs-button" data-link="link-3">Pato</li>
+						<li class="tabs-button active" data-link="link-1">Ronald</li>
+						<li class="tabs-button" data-link="link-2">Gabo</li>
+						<li class="tabs-button" data-link="link-3">Innovador</li>
 					</ul>
 				  </div>
 			   </div>
@@ -513,60 +517,7 @@
 		   </div>
 	   </section> -->
 
-       <!-- <section class="section-slider lg text-center">
-           <div class="container">
-			  <div class="section-caption">
-				 <h2 class="h2 caption-stye-1 type-4 dark">HACER BARRA ¿Qué piensan los medios sobre Credipy?</h2>
-				    <div class="simple-text sm">
-						<p>Curabitur augue elit, egestas vitae erat sed, in the maximus very sollicitudin nisi. In a diam vehicula sed sollicitudin</p>
-					</div>
-			  </div>
-		   </div>
-		        <div class="swiper-container graph-slider click-point" data-autoplay="0" data-loop="0" data-speed="600" data-center="0" data-slides-per-view="1">
-				   <div class="swiper-wrapper">
-					   <div class="swiper-slide">
-					      <div class="praph-gallery">
-					       <div class="image">
-					      	<img src="home3/gallery_img_1.jpg" alt="" class="resp-img">
-				      	   </div>
-				      	   <div class="text">
-					       <h4 class="h4 title">Glenda Ortega, <b>América Economía</b></h4>
-					         <div class="simple-text">
-					         	<p>"Las redes sociales dejaron de ser sólo una opción, para estar en contacto con amigos. Hoy, permiten a muchos resolver necesidades como el acceso a créditos y realizar transferencias de dinero."</p>
-					         </div>
-					       </div>
-					      </div>
-					   </div>
-					   <div class="swiper-slide">
-					      <div class="praph-gallery">
-					       <div class="image">
-					      	<img src="home3/gallery_img_1.jpg" alt="" class="resp-img">
-				      	   </div>
-				      	   <div class="text">
-					       <h4 class="h4 title">proces of doing</h4>
-					         <div class="simple-text">
-					         	<p>Vestibulum lacinia mauris non ligula rhoncus, non pretium massa consectetur. Cras tincidunt purus non malesuada pellentesque. Mauris consequat urna tortor, ac pulvinar ex laoreet id</p>
-					         </div>
-					       </div>
-					      </div>
-					   </div>
-					   <div class="swiper-slide">
-					      <div class="praph-gallery">
-					       <div class="image">
-					      	<img src="home3/gallery_img_1.jpg" alt="" class="resp-img">
-				      	   </div>
-				      	   <div class="text">
-					       <h4 class="h4 title">proces of doing</h4>
-					         <div class="simple-text">
-					         	<p>Vestibulum lacinia mauris non ligula rhoncus, non pretium massa consectetur. Cras tincidunt purus non malesuada pellentesque. Mauris consequat urna tortor, ac pulvinar ex laoreet id</p>
-					         </div>
-					       </div>
-					      </div>
-					   </div>
-					 </div>
-					 <div class="pagination pagination-style-3"></div>
-			    </div>
-	  </section> -->
+
 
 
 
@@ -578,45 +529,131 @@
        	  	  		  <div class="line-point"></div>
        	  	  		  <div class="line-point right"></div>
        	  	  			<div class="image">
-       	  	  			  <img src="home3/info_icon_1.png" alt="">
-       	  	  			  <span class="timer" data-to="865" data-speed="3000">865</span>
+       	  	  			  <img src="home3/dollar-icon.png" alt="">
+       	  	  			  <span class="timer2">$15.616.195,00</span>
        	  	  			</div>
-       	  	  			<h4 class="h4 title">caracteristica 1</h4>
+       	  	  			<h4 class="h4 title">Monto Transferido</h4>
        	  	  		</div>
        	  	  	</div>
        	  	  	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
        	  	  		<div class="fact-item type-2">
        	  	  		  <div class="line-point"></div>
        	  	  			<div class="image">
-       	  	  			  <img src="home3/info_icon_2.png" alt="">
-       	  	  			  <span class="timer" data-to="585" data-speed="3000">585</span>
+       	  	  			  <img src="home3/users-icon.png" alt="">
+       	  	  			  <span class="timer2">288.316</span>
        	  	  			</div>
-       	  	  			<h4 class="h4 title">caracteristica 2</h4>
+       	  	  			<h4 class="h4 title">Usuarios</h4>
        	  	  		</div>
        	  	  	</div>
        	  	  	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
        	  	  		<div class="fact-item type-2">
        	  	  		  <div class="line-point"></div>
        	  	  			<div class="image">
-       	  	  			  <img src="home3/info_icon_2.png" alt="">
-       	  	  			  <span class="timer" data-to="696" data-speed="3000">696</span>
+       	  	  			  <img src="home3/store-icon.png" alt="">
+       	  	  			  <span class="timer2">60.000</span>
        	  	  			</div>
-       	  	  			<h4 class="h4 title">caracteristica 3</h4>
+       	  	  			<h4 class="h4 title">Establecimientos</h4>
        	  	  		</div>
        	  	  	</div>
        	  	  	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
        	  	  		<div class="fact-item type-2">
        	  	  		  <div class="line-point"></div>
        	  	  			<div class="image">
-       	  	  			  <img src="home3/info_icon_4.png" alt="">
-       	  	  			  <span class="timer" data-to="569" data-speed="3000">569</span>
+       	  	  			  <img src="home3/bank-icon.png" alt="">
+       	  	  			  <span class="timer2">145</span>
        	  	  			</div>
-       	  	  			<h4 class="h4 title">caracteristica 4</h4>
+       	  	  			<h4 class="h4 title">Cooperativas y Bancos</h4>
        	  	  		</div>
        	  	  	</div>
        	  	  </div>
 		   </div>
 	 </section>
+
+
+
+
+
+
+
+   <section class="section-slider lg text-center">
+       <div class="container">
+    <div class="section-caption">
+     <h2 class="h2 caption-stye-1 type-4 dark">Paga todos tus servicios básicos desde Credipy y compra en miles de locales</h2>
+        <div class="simple-text sm">
+        <p style="max-width: 800px; text-align: center;">Existen más de 60.000 puntos donde puedes usar en Ecuador dinero electrónico, solo preguntalo al pagar por tus compras, así como en servicios como taxis o invita a tus amigos a usarlo.</p>
+      </div>
+    </div>
+   </div>
+        <div class="swiper-container graph-slider click-point" data-autoplay="0" data-loop="0" data-speed="600" data-center="0" data-slides-per-view="1">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide">
+            <div class="praph-gallery">
+             <div class="image">
+              <img src="home3/compras-slider.png" alt="" class="resp-img">
+               </div>
+               <div class="text">
+             <h4 class="h4 title"><b>Compras</b></h4>
+             </div>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="praph-gallery">
+             <div class="image">
+              <img src="home3/restaurante-slider.png" alt="" class="resp-img">
+               </div>
+               <div class="text">
+             <h4 class="h4 title"><b>Restaurantes</b></h4>
+             </div>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="praph-gallery">
+             <div class="image">
+              <img src="home3/autos-slider.png" alt="" class="resp-img">
+               </div>
+               <div class="text">
+             <h4 class="h4 title"><b>Vehículos</b></h4>
+
+             </div>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="praph-gallery">
+             <div class="image">
+              <img src="home3/privado-slider.png" alt="" class="resp-img">
+               </div>
+               <div class="text">
+             <h4 class="h4 title"><b>Entidades financieras</b></h4>
+
+             </div>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="praph-gallery">
+             <div class="image">
+              <img src="home3/publico-slider.png" alt="" class="resp-img">
+               </div>
+               <div class="text">
+             <h4 class="h4 title"><b>Entidades Públicas</b></h4>
+
+             </div>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="praph-gallery">
+             <div class="image">
+              <img src="home3/salud-slider.png" alt="" class="resp-img">
+               </div>
+               <div class="text">
+             <h4 class="h4 title"><b>Salud</b></h4>
+
+             </div>
+            </div>
+         </div>
+       </div>
+       <div class="pagination pagination-style-3"></div>
+      </div>
+</section>
 
 	  <!-- <section class="section">
 			  <div class="section-caption">
@@ -666,44 +703,91 @@
 			</div>
 	  </section> -->
 
-	  <!-- <section class="section bg-grey">
+
+
+
+<!--
+    <section class="section" id="contact">
+       <div class="container">
+        <div class="section-caption">
+         <h2 class="h2 caption-stye-1 type-4 dark">Paga todos tus servicios básicos desde Credipy y compra en miles de locales</h2>
+          <div class="simple-text md">
+            <p>Existen más de 60.000 puntos donde puedes usar en Ecuador dinero electrónico, solo preguntalo al pagar por tus compras, así como en servicios como taxis o invita a tus amigos a usarlo.</p>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-12">
+            <div class="col-md-4">
+              <img src="home3/store-logo1.png" class="abajo30" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="home3/store-logo2.png" class="abajo30" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="home3/store-logo3.png" class="abajo30" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="col-md-4">
+              <img src="home3/store-logo4.png" class="abajo30" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="home3/store-logo5.png" class="abajo30" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="home3/store-logo6.png" class="abajo30" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-12" style="text-align: center;">
+            <div class="col-md-4">
+              <img src="home3/store-logo7.png" class="abajo30" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="home3/store-logo8.png" class="abajo30" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="home3/store-logo9.png" class="abajo30" alt="">
+            </div>
+            <h3><a href="puntos.html">Ver lista completa</a></h3>
+          </div>
+
+        </div>
+
+       </div>
+    </section> -->
+
+
+
+
+
+
+
+	  <section class="section bg-grey">
            <div class="container">
-			  <div class="section-caption">
-				 <h2 class="h2 caption-stye-1 type-4 dark">Video gallery</h2>
-				    <div class="simple-text sm">
-						<p>Curabitur augue elit, egestas vitae erat sed, in the maximus very sollicitudin nisi. In a diam vehicula sed sollicitudin</p>
-					</div>
-			  </div>
 			  <div class="sm-video-block big margin-lg">
 			   <div class="play-button"><i class="icon-play"></i></div>
-				<div class="bg" style="background-image:url(home3/video_bg.jpg)"></div>
+				<div class="bg" style="background-image:url(home3/video_bg.png)"></div>
 				  <div class="video-item">
 				   <div class="video-wrapper">
 					 <video loop="" class="bgvid">
-						<source type="video/webm" src="video/video.webm">
-						<source type="video/mp4" src="video/video.mp4">
-						<source type="video/mp4" src="video/video.ogv">
+						<source type="video/webm" src="video/video-credipy.webm">
+						<source type="video/mp4" src="video/video-credipy.mp4">
+						<source type="video/mp4" src="video/video-credipy.ogv">
 					 </video>
 					 <div class="close-video"><span>+</span></div>
 				   </div>
 				  </div>
 			   </div>
-			   <div class="row">
-			   	  <div class="col-md-6">
-			   	  	 <h4 class="h4 title">subscribe for our video news and get discount</h4>
-			   	  	   <div class="simple-text sm">
-			   	  	   	<p>Curabitur augue elit, egestas vitae erat sed, in the maximus sollicitu</p>
-			   	  	   </div>
-			   	  </div>
-			   	  <div class="col-md-6">
-			   	  	 <form action="#" class="subscribe-form type-2">
-						<input placeholder="E-mail" required="" type="email">
-						<input value="subscribe now" type="submit">
-					 </form>
-			   	  </div>
-			   </div>
+         <div class="row">
+           <div class="col-md-12 video-text">
+             <h3>¡Mira como funciona!</h3>
+           </div>
+         </div>
 		   </div>
-	  </section> -->
+	  </section>
 
 	  <!-- <section class="section" id="pricing">
           <div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url(home3/price_bg.jpg)"></div>
@@ -1029,27 +1113,37 @@ ex laoreet id condimentum</a></h5>
 		       </div>
 	 </section> -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	  <section class="section" id="contact">
 		   <div class="container">
 			  <div class="section-caption">
-				 <h2 class="h2 caption-stye-1 type-4 dark">Donde nos puedes encontrar</h2>
-					<div class="simple-text sm">
-						<p>Curabitur augue elit, egestas vitae erat sed, in the maximus very sollicitudin nisi. In a diam vehicula sed sollicitudin</p>
-					</div>
+				 <h2 class="h2 caption-stye-1 type-4 dark">Contáctanos</h2>
 			  </div>
 			  <div class="row">
-			  	<!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-			  		<div class="contact-block type-2">
-			  			<div class="image">
-			  				<img src="home3/contact_icon_1.png" alt="">
-			  			</div>
-			  			<h4 class="h4 title">Dirección Postal</h4>
-			  			  <ul>
-			  			  	<li>PO Box 16122 Quito</li>
-							<li>Victoria 8007 Ecuador</li>
-			  			  </ul>
-			  		</div>
-			  	</div> -->
+          <div class="col-md-12" style="margin-top: -80px; margin-left: 60px;">
+            <div class="col-md-6">
+              <img src="img/chica-ws.png" alt="">
+            </div>
+            <div class="col-md-6" style="margin-top: 170px;">
+              <h1 style="font-size: 25px; text-transform: uppercase;">Asistente personal por  <span style="color: #189D0E;">WhatsApp</span><br><br></h1>
+              <h3 style="font-size: 40px;">+(593) 099-431-0203 <br><br></h3>
+              <h3 style="font-size: 25px;">¡Escríbenos! <i class="em-wink"></i></h3>
+            </div>
+          </div>
 			  	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 			  		<div class="contact-block type-2">
 			  			<div class="image">
@@ -1084,17 +1178,10 @@ ex laoreet id condimentum</a></h5>
 			  		</div>
 			  	</div>
 			  </div>
-			  <div class="map-wrapper type-2" id="map-canvas" data-lat="-0.184979" data-lng="-78.47457" data-zoom="13" data-style="2"></div>
-				<div class="markers-wrapper addresses-block">
-				   <a class="marker" data-rel="map-canvas" data-lat="-0.184979" data-lng="-78.47457" data-string="Quito Ecuador"></a>
-				</div>
 			 <div class="row">
 			 	<div class="col-md-6">
 			 		 <div class="caption-stye-3">
-					   <h3 class="h3 title">¿Tienes una pregunta?</h3>
-						 <div class="simple-text">
-							<p>Cras vitae varius velit. In congue tellus sit amet lorem sagittis sodales. Maecenas dignissim mattis lacus</p>
-						 </div>
+					   <h3 class="h3 title">Si tienes una duda, consulta o propuesta por favor contáctanos</h3>
 					  </div>
 			 	</div>
 			 	<div class="col-md-6">
@@ -1126,78 +1213,29 @@ ex laoreet id condimentum</a></h5>
      		<div class="row">
      			<div class="col-md-3 col-sm-6">
      				<div class="footer-item white-color">
-     					<a href="index.html" class="footer-logo"><img src="img/logo.png" alt=""></a>
-     					<div class="simple-text">
-     						<p>Phasellus varius mi in diam ultricies, vel tristique enim efficitur. Sed lobortis dolor tincidunt ex tristiqu ultrices magna eu augue </p>
-     					</div>
+     					<a href="index.html" class="footer-logo"><img src="img/logo.png" style="width: 250px;" alt=""></a>
+
      				</div>
      			</div>
-     			<div class="col-md-3 col-sm-6">
+     			<div class="col-md-9 col-sm-6" style="text-align: right;">
      			    <div class="footer-item white-color">
      			       <h4 class="h4 title">Legal</h4>
      			         <ul class="footer-list">
-     			         	<li><a href="faq.html">Preguntas frecuentes</a></li>
+     			         	<li><a href="faq.html">Preguntas Frecuentes</a></li>
      			         	<li><a href="#">Politicas de Privacidad</a></li>
      			         </ul>
 					</div>
 				</div>
-     			<!-- <div class="col-md-3 col-sm-6">
-     			    <div class="footer-item  white-color">
-     			       <h4 class="h4 title">LATEST TWEETS</h4>
-     			         <div class="twitter-item">
-     			         	<i class="icon-twitter"></i>
-     			         	  <div class="text">
-     			         	  	<div class="time">3 min ago</div>
-     			         	  	<div class="simple-text">
-     			         	  		<p><a href="#">@oleska</a> Here may be <a href="#">#others</a> <a href="#">#champing</a> at the bit, but <a href="#">#Ralph</a> proves sapien</p>
-     			         	  	</div>
-     			         	  </div>
-     			         </div>
-     			         <div class="twitter-item">
-     			         	<i class="icon-twitter"></i>
-     			         	  <div class="text">
-     			         	  	<div class="time">12 min ago</div>
-     			         	  	<div class="simple-text">
-     			         	  		<p><a href="#">@oleska</a> Here may be <a href="#">#others</a> <a href="#">#champing</a> at the bit, but <a href="#">#Ralph</a> proves sapien</p>
-     			         	  	</div>
-     			         	  </div>
-     			         </div>
-					</div>
-				</div> -->
-    		    <!-- <div class="col-md-3 col-sm-6">
-     			    <div class="footer-item white-color">
-     			       <h4 class="h4 title">EXCHANGE</h4>
-     			       <div class="row">
-							<div class="col-md-6 col-xs-6">
-								<ul class="footer-list">
-									<li><a href="#">Overview</a></li>
-									<li><a href="#">Join Free</a></li>
-									<li><a href="#">Login</a></li>
-									<li><a href="#">Support</a></li>
-								 </ul>
-							</div>
-							<div class="col-md-6 col-xs-6">
-								<ul class="footer-list">
-									<li><a href="#">Signin</a></li>
-									<li><a href="#">Enter now</a></li>
-									<li><a href="#">Log off</a></li>
-									<li><a href="#">Info call</a></li>
-								 </ul>
-							</div>
-						</div>
-					</div>
-
-				</div> -->
      		</div>
      		<div class="bottom-footer">
      		<div class="copyright">
      			<span>2017 Todos los derechos reservados. Desarrollado por <a href="http://sequoiatechs.com">Sequoia Techs</a></span>
      		</div>
      		<div class="share type-2">
-			  <a href="#"><i class="icon-facebook"></i></a>
-			  <a href="#"><i class="icon-pinterest"></i></a>
-			  <a href="#"><i class="icon-instagram"></i></a>
-			  <a href="#"><i class="icon-twitter"></i></a>
+			  <a href="https://facebook.com/credipy"><i class="icon-facebook"></i></a>
+			  <a href="https://instagram.com/credipy"><i class="icon-instagram"></i></a>
+			  <a href="https://twitter.com/credipy"><i class="icon-twitter"></i></a>
+        <a href="https://linkedin.com/credipy"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
      		</div>
      	</div>
@@ -1209,9 +1247,9 @@ ex laoreet id condimentum</a></h5>
 			  <div class="cell-view">
 				 <div class="thanks">
 				   <div class="close-popup"><span>X</span></div>
-					<h4 class="h4 title">Your message was sent successfully</h4>
+					<h4 class="h4 title">Tu mensaje fue enviado</h4>
 					  <div class="simple-text">
-						<p>Duis commodo risus et magna suscipit aliquam. Curabitur gravida efficitur purus. Pellentesque finibus neque sit amet justo volutpat tincidunt enim id turpis feugiat</p>
+						<p>Próximamente una persona de nuestro equipo se podrá en contacto contigo.</p>
 					  </div>
 				 </div>
 			  </div>
